@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - RotaCliente</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="logo">
+        📍 Rota<span>Cliente</span>
+    </div>
+
+</header>
+
+<main class="container">
+
+    <section class="card">
+
+        <h1>Entrar</h1>
+
+        <p class="slogan">
+            Faça login para acessar o sistema.
+        </p>
+
+        <form id="formLogin">
+
+            <div class="campo">
+                <label>Email</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="campo">
+                <label>Senha</label>
+                <input type="password" id="senha" required>
+            </div>
+
+            <button class="btn-salvar" type="submit">
+                Entrar
+            </button>
+
+        </form>
+
+        <div style="margin-top:15px; text-align:center;">
+
+            <p>
+                Não possui conta?
+            </p>
+
+            <a href="cadastro.html">
+                Criar conta
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script type="module" src="auth.js"></script>
+
+</body>
+</html>

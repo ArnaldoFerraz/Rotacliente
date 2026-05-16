@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>RotaCliente</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <!-- PWA -->
+
+    <link rel="manifest"
+          href="manifest.json">
+
+    <meta name="theme-color"
+          content="#0f172a">
+
+</head>
+
+<body>
+
+<!-- TOPO -->
+
+<header class="topbar">
+
+    <!-- LOGO -->
+
+    <div class="logo">
+        Rota<span>Cliente</span>
+    </div>
+
+    <!-- MENU -->
+
+    <nav class="menu">
+
+        <a href="index.html">
+            Cadastro
+        </a>
+
+        <a href="pesquisa.html">
+            Pesquisar
+        </a>
+
+        <a href="painel.html"
+           id="adminLink"
+           style="display:none;">
+            Painel
+        </a>
+
+        <a href="#"
+           id="logoutBtn">
+            Sair
+        </a>
+
+    </nav>
+
+</header>
+
+<!-- CONTEÚDO -->
+
+<main class="container">
+
+    <!-- HEADER -->
+
+    <section class="welcome-card">
+
+        <div>
+
+            <h1>
+                Cadastro de Endereços
+            </h1>
+
+            <p class="slogan">
+                Sistema inteligente para motoristas.
+            </p>
+
+        </div>
+
+        <p id="usuarioLogado"></p>
+
+    </section>
+
+    <!-- CARD -->
+
+    <section class="card">
+
+        <form id="formCadastro">
+
+            <!-- NOME -->
+
+            <div class="campo">
+
+                <label>
+                    Nome
+                </label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Digite o nome"
+                    required
+                >
+
+            </div>
+
+            <!-- ENDEREÇO -->
+
+            <div class="campo">
+
+                <label>
+                    Endereço
+                </label>
+
+                <input
+                    type="text"
+                    id="endereco"
+                    placeholder="Digite o endereço"
+                    required
+                >
+
+            </div>
+
+            <!-- BOTÃO -->
+
+            <button
+                class="btn-salvar"
+                type="submit"
+            >
+                Salvar Cliente
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- CLIENTES -->
+
+    <section class="lista">
+
+        <div id="listaClientes">
+            <p class="vazio">
+                🔎 Pesquise um endereço pra ter acesso a localização
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+<!-- JS -->
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>

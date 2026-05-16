@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Pesquisar - RotaCliente</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="theme-color"
+          content="#2563eb">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="logo">
+        📍 Rota<span>Cliente</span>
+    </div>
+
+    <nav class="menu">
+
+        <a href="index.html">
+            Cadastro
+        </a>
+
+        <a href="pesquisa.html">
+            Pesquisar
+        </a>
+
+        <a href="painel.html"
+           id="adminLink"
+           style="display:none;">
+            Painel
+        </a>
+
+        <a href="#"
+           id="logoutBtn">
+            Sair
+        </a>
+
+    </nav>
+
+</header>
+
+<main class="container">
+
+    <!-- SLOGAN -->
+
+    <p class="slogan">
+        Pesquise clientes e endereços rapidamente.
+    </p>
+
+    <!-- USUÁRIO -->
+
+    <p id="usuarioLogado"></p>
+
+    <!-- PESQUISA -->
+
+    <section class="card">
+
+        <h1>
+            Pesquisar Endereços
+        </h1>
+
+        <form id="formPesquisa">
+
+            <div class="campo">
+
+                <label>
+                    Nome ou endereço
+                </label>
+
+                <input
+                    type="text"
+                    id="pesquisa"
+                    required
+                >
+
+            </div>
+
+            <button
+                class="btn-salvar"
+                type="submit"
+            >
+                Pesquisar
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- RESULTADOS -->
+
+    <section class="lista">
+
+        <h2>
+            Resultados
+        </h2>
+
+        <div id="resultadoPesquisa">
+
+            <p class="vazio">
+                Digite para pesquisar.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script type="module"
+        src="pesquisa.js">
+</script>
+
+</body>
+</html>
